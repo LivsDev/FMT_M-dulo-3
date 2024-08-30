@@ -1,6 +1,10 @@
 const { DataTypes } = require("sequelize")
 const {connection} = require("../database/connection")
 
+const User = require("./User") // relacionamento
+const UserRole = require("./UserRole")
+
+
 const Role = connection.define("role", {
     description: {
         type: DataTypes.STRING,
@@ -14,6 +18,9 @@ const Role = connection.define("role", {
          type: DataTypes.DATE
 }
 })
+
+User.belongsToMany(Role, {through: UserRole}) //relacionamento
+Role.belongsToMany(User, {through: UserRole})
 
 module.exports= Role
 
