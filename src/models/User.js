@@ -16,4 +16,4 @@ const User = connection.define('user', {
     updatedAt: DataTypes.DATE
 })
 
-module.exports = User;
+module.exports = User

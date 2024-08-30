@@ -21,6 +21,6 @@ module.exports = {
     await queryInterface.dropTable(UserRole.tableName);
     await queryInterface.dropTable(Permission.tableName);
     await queryInterface.dropTable(Role.tableName);
-    await queryInterface.dropTable(User.tableName);
+    //await queryInterface.dropTable(User.tableName);
   }
 };
