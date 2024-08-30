@@ -1,4 +1,4 @@
-const {connection} = require("../database/connection")
+const { connection } = require("../database/connection")
 const {DataTypes} = require("sequelize")
 
 const User = connection.define('user', {
@@ -16,4 +16,4 @@ const User = connection.define('user', {
     updatedAt: DataTypes.DATE
 })
 
-module.exports = User
+module.exports = User;
