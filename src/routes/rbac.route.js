@@ -12,4 +12,3 @@ RbacRouter.post("/addRoleToUser", RbacController.addRoleToUser)
 RbacRouter.get("/listPermissionsByRole/:id", RbacController.listPermissionsByRole)
 
 module.exports = RbacRouter
-
